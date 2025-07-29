@@ -1,20 +1,26 @@
 # OpenMP-CUDA
 Benchmark the performance of CPU-based parallelism against GPU computing for simple ML related tasks
 
-Requirements
+## Overview
 
-    System:
+This project provides implementations of matrix multiplication and a simple Deep Q-Network (DQN) forward pass using OpenMP and CUDA.
 
-        Linux or Windows with CUDA-compatible GPU (for CUDA version)
+## Requirements
 
-    Compilers:
+- g++ with OpenMP support
+- NVIDIA CUDA Toolkit
+- Python 3.x with matplotlib
 
-        g++ (with OpenMP support)
+## Setup, compilation and usage
 
-        nvcc (NVIDIA CUDA compiler)
+Compile OpenMP version:
 
-    Python 3.x with the following packages:
+`g++ -fopenmp -O3 Folder/example.cpp -o Folder/example`
 
-        matplotlib (for plotting)
+Compile CUDA version:
 
-    CUDA Toolkit: Installed and properly configured in your environment for compiling and running CUDA code.
+`nvcc -O3 Folder/example.cu -o Folder/example`
+
+Run benchmark script:
+
+`python3 benchmark_example.py`
