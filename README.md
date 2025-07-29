@@ -3,7 +3,7 @@ Benchmark the performance of CPU-based parallelism against GPU computing for sim
 
 ## Overview
 
-This project provides implementations of matrix multiplication and a simple Deep Q-Network (DQN) forward pass using OpenMP and CUDA.
+This project currently provides implementations of: matrix multiplication and simple Deep Q-Network (DQN) forward pass using OpenMP and CUDA.
 
 ## Requirements
 
